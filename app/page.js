@@ -1,9 +1,13 @@
+
 import Navbar from "@/components/Navbar";
+import Intro from "@/components/Intro";
+
 
 export default function Home() {
   return (
     <div>
       <Navbar/>
+      <Intro/>
       Introduction is needed
     </div>
   );
