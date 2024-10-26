@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div>
       <Navbar/>
-      Hello this is the home page
+      Introduction is needed
     </div>
   );
 }
