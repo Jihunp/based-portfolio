@@ -1,16 +1,17 @@
 "use client"
 
 import Link from 'next/link';
+import ThreeScene from './ThreeScene';
 import "../app/styles/globals.css";
 
 export default function Intro() {
   return (
     <section className="relative flex flex-col items-center justify-center h-screen bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 text-white text-center">
 
-      <div className="flowing-background inset-0 bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 opacity-30 blur-lg -z-10"></div>
+      <div className="inset-0 bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 opacity-30 blur-lg -z-10"></div>
 
       {/* Profile Image */}
-      <div className="animate-bounce duration-150 w-32 h-32 rounded-full bg-cover bg-center bg-no-repeat mb-6" style={{ backgroundImage: "url('/test.jpg')" }}>
+      <div className="duration-150 w-32 h-32 rounded-full bg-cover bg-center bg-no-repeat mb-6" style={{ backgroundImage: "url('/test.jpg')" }}>
       </div>
 
       {/* Intro Text */}
