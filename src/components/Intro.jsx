@@ -8,7 +8,7 @@ import Projects from './Projects';
 
 export default function Intro() {
   return (
-    <div>
+    <div className='h-screen overflow-y-scroll scroll-snap-y scroll-snap-mandatory'>
       <section className="relative flex flex-col items-center justify-center h-screen text-center bg-gray-100 text-gray-800 snap-start">
 
         {/* Profile Image */}
@@ -34,8 +34,9 @@ export default function Intro() {
           View my work
         </Link>
       </section>
-      <About />
-      <Projects/>
+
+        <About />
+        <Projects/>
 
     </div>
   )

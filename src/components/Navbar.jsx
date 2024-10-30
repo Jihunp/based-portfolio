@@ -1,3 +1,4 @@
+// Navbar.js
 "use client";
 import { useState } from 'react';
 import Link from 'next/link';
@@ -6,7 +7,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="p-6 text-xl bg-white shadow-lg border-b border-gray-200">
+    <nav className="fixed top-0 w-full z-10 p-6 text-xl bg-white shadow-lg border-b border-gray-200">
       <div className="container mx-auto flex justify-between items-center">
         
         {/* Logo Section */}

@@ -5,7 +5,7 @@ import "../app/styles/globals.css";
 
 export default function About() {
   return (
-    <section id="work" className="flex flex-col items-center justify-center h-screen bg-gray-200 text-gray-800 snap-start">
+    <section id="work" className=" snap-start flex flex-col items-center justify-center h-screen bg-gray-200 text-gray-800 snap-start">
       <h2 className="text-4xl md:text-5xl font-bold mb-4">About</h2>
       <p className="text-lg md:text-2xl max-w-xl text-center mb-6">
         Back in 2021, I made a career pivot from being a Sociology student to the world of teach through my first bootcamp.
