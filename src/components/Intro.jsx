@@ -3,9 +3,6 @@
 import Link from 'next/link';
 import "../app/styles/globals.css";
 
-import About from './About';
-import Projects from './Projects';
-
 export default function Intro() {
   return (
     <div className='h-screen overflow-y-scroll scroll-snap-y scroll-snap-mandatory'>
@@ -28,15 +25,12 @@ export default function Intro() {
           Download Resume
         </Link> */}
         <Link
-          href="#work"
+          href="#projects"
           className="mt-4 px-6 py-3 bg-white text-indigo-600 font-semibold rounded-lg shadow-lg hover:bg-gray-100 transition duration-300 ease-in-out"
         >
           View my work
         </Link>
       </section>
-
-        <About />
-        <Projects/>
 
     </div>
   )

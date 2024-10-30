@@ -33,14 +33,13 @@ export default function Projects() {
   return (
     <section 
       id="projects" 
-      className="flex flex-col items-center h-screen bg-gray-300 text-gray-800 snap-start
-                 px-4 sm:px-8 lg:px-16 xl:px-32 2xl:px-48">
+      className="flex flex-col items-center h-screen bg-gray-300 text-gray-800 snap-start px-4 sm:px-8 lg:px-16 xl:px-32 2xl:px-48 pt-20">
       <h2 className="text-4xl md:text-5xl pt-10 font-bold mb-4">My Projects</h2>
 
       <div className="flex flex-col md:flex-row md:w-full p-4 space-x-4">
         
         {/* Default Project on the Left */}
-        <div className="bg-white rounded-lg shadow-lg p-6 md:w-1/2 transition-transform transform hover:scale-105 hover:shadow-2xl">
+        <div className="bg-white rounded-lg shadow-lg p-6 md:w-1/2 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl">
           <h3 className="text-2xl font-semibold mb-2">{selectedProject.title}</h3>
           <p className="mt-2">{selectedProject.description}</p>
           <Link href={selectedProject.url} className="text-indigo-600 hover:underline mt-4 block">View Project</Link>
@@ -53,7 +52,9 @@ export default function Projects() {
               <li 
                 key={project.id}
                 className="bg-white shadow-lg rounded-lg p-4 transition-transform transform hover:scale-105"
-                onMouseEnter={() => setSelectedProject(project)}
+                onMouseEnter={() => {
+                  setSelectedProject(project);
+                  }}
               >
                 <h3 className="text-xl font-semibold">{project.title}</h3>
                 <p className="mt-2 text-gray-600">{project.description}</p>

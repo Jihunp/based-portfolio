@@ -18,9 +18,9 @@ export default function Navbar() {
         {/* Desktop Links */}
         <div className="hidden md:flex space-x-6">
           <Link href="/" className="text-gray-600 p-3 rounded-md transition hover:bg-gray-100 hover:text-gray-900">Home</Link>
-          <Link href="/about" className="text-gray-600 p-3 rounded-md transition hover:bg-gray-100 hover:text-gray-900">About</Link>
-          <Link href="/projects" className="text-gray-600 p-3 rounded-md transition hover:bg-gray-100 hover:text-gray-900">Projects</Link>
-          <Link href="/contact" className="text-gray-600 p-3 rounded-md transition hover:bg-gray-100 hover:text-gray-900">Contact Me</Link>
+          <Link href="/#about-me" className="text-gray-600 p-3 rounded-md transition hover:bg-gray-100 hover:text-gray-900">About</Link>
+          <Link href="/#projects" className="text-gray-600 p-3 rounded-md transition hover:bg-gray-100 hover:text-gray-900">Projects</Link>
+          <Link href="/#contact" className="text-gray-600 p-3 rounded-md transition hover:bg-gray-100 hover:text-gray-900">Contact Me</Link>
         </div>
 
         {/* Hamburger Icon for Mobile */}
