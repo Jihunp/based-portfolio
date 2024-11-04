@@ -6,7 +6,7 @@ export default function ContactMe() {
   const userId = process.env.NEXT_PUBLIC_EMAILJS_USER_ID;
 
   return (
-    <section id="contact-us" className="flex flex-col items-center justify-center h-screen bg-gray-400 text-gray-800 snap-start pt-20 px-4 sm:px-8 lg:px-16">
+    <section id="contact-us" className="flex flex-col items-center justify-center bg-gray-400 text-gray-800 snap-start px-4 sm:px-8 lg:px-16">
       <h2 className="text-4xl md:text-5xl font-bold mb-8">Contact Me</h2>
       <p className="text-lg md:text-2xl max-w-xl text-center mb-6">
         I&apos;d love to hear from you! Whether you have a question, a project idea, or just want to say hi, feel free to reach out.

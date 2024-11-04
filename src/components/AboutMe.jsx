@@ -6,7 +6,7 @@ import { FaGithub, FaEnvelope, FaLinkedin, FaFileAlt, FaFilePdf } from 'react-ic
 
 export default function AboutMe() {
   return (
-    <section id="about-me" className="relative flex flex-col items-center justify-center h-screen bg-gray-200 text-gray-800 snap-start pt-20">
+    <section id="about-me" className="relative flex flex-col items-center justify-center bg-gray-200 text-gray-800 snap-start">
       {/* Decorative Shapes */}
       <div className="absolute -top-10 -left-10 w-40 h-40 bg-indigo-500 rounded-full opacity-50 animate-pulse"></div>
       <div className="absolute top-32 -right-12 w-24 h-24 bg-yellow-400 rounded-full opacity-70 animate-bounce"></div>

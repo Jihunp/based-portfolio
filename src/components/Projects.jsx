@@ -17,7 +17,7 @@ export default function Projects() {
       id: 2,
       title: "Wordle Clone Easy Mode",
       shortDescription: "Recreation of the popular NYT game Wordle using React",
-      longDescription: "This React-based project recreates the popular word game, Wordle. Players have six attempts to guess a five-letter word. Each guess is color-coded to indicate correct letters, correctly placed letters, and incorrect letters. To make it easier, I made it so that the words used do not have to be actual words. It's wordle but for beginners.",
+      longDescription: "A React-based recreation of Wordle. Players have six attempts to guess a five-letter word. Each guess is color-coded to indicate correct letters, correctly placed letters, and incorrect letters. It's wordle but for beginners.",
       imageUrl: "/wordle.png",
       url: "https://wordle-one-coral.vercel.app/",
     },
@@ -36,7 +36,7 @@ export default function Projects() {
       longDescription: "A remake of Tetris built using React and Javascript. It replicates core gameplay of the original game.",
       imageUrl: "/tetris.png",
       url: "https://tetris-kappa-blush.vercel.app/",
-    }
+    },
 
   ];
 
@@ -51,7 +51,7 @@ export default function Projects() {
       <div className="flex flex-col md:flex-row md:w-full p-4 space-x-4">
         
         {/* Default Project on the Left */}
-        <div className="bg-white rounded-lg shadow-lg p-6 md:w-1/2 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl">
+        <div className="bg-white rounded-lg shadow-lg p-6 md:w-1/2 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl max-h-[700px]">
           <h3 className="text-3xl font-semibold mb-4 text-center">{selectedProject.title}</h3>
           <img 
             src={selectedProject.imageUrl}
@@ -63,7 +63,7 @@ export default function Projects() {
         </div>
 
         {/* Scrollable List Container */}
-        <div className="bg-gray-200 rounded-lg shadow-lg overflow-y-scroll p-6 md:w-1/2">
+        <div className="bg-gray-200 rounded-lg shadow-lg overflow-y-scroll p-6 md:w-1/2 max-h-[700px]">
           <ul className="space-y-4">
             {projects.map((project) => (
               <li 
