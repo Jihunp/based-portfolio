@@ -8,24 +8,28 @@ export default function Projects() {
     {
       id: 1,
       title: "Ai Helper",
-      description: "Description for Ai Helper",
-      imageUrl: "",
+      shortDescription: "Description for Ai Helper",
+      longDescription: "",
+      imageUrl: "/test.jpg",
       url: "pop",
     },
     {
       id: 2,
-      title: "fun project 2",
-      description: "Description for project 2",
-      imageUrl: "",
-      url: "drop",
+      title: "Wordle Clone Easy Mode",
+      shortDescription: "Recreation of the popular NYT game Wordle using React",
+      longDescription: "This React-based project recreates the popular word game, Wordle. Players have six attempts to guess a five-letter word. Each guess is color-coded to indicate correct letters, correctly placed letters, and incorrect letters. To make it easier, I made it so that the words used do not have to be actual words. It's wordle but for beginners.",
+      imageUrl: "/wordle.png",
+      url: "https://wordle-one-coral.vercel.app/",
     },
     {
       id: 3,
       title: "fun project 3",
-      description: "Description for project 3",
-      imageUrl: "",
+      shortDescription: "Description for project 3",
+      longDescription: "",
+      imageUrl: "/test.jpg",
       url: "rockit",
     }
+
   ];
 
   const [selectedProject, setSelectedProject] = useState(projects[0]);
@@ -40,9 +44,14 @@ export default function Projects() {
         
         {/* Default Project on the Left */}
         <div className="bg-white rounded-lg shadow-lg p-6 md:w-1/2 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl">
-          <h3 className="text-2xl font-semibold mb-2">{selectedProject.title}</h3>
-          <p className="mt-2">{selectedProject.description}</p>
-          <Link href={selectedProject.url} className="text-indigo-600 hover:underline mt-4 block">View Project</Link>
+          <h3 className="text-2xl font-semibold mb-2 justify-self-center">{selectedProject.title}</h3>
+          <img 
+            src={selectedProject.imageUrl}
+            alt={`$selectedProject.title`}
+            className='w-full h-auto max-h-80 md:max-h-96 object-contain rounded-md'
+          />
+          <p className="mt-2">{selectedProject.longDescription}</p>
+          <Link href={selectedProject.url} className="inline-block mt-4 px-4 py-2 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-500">View Project</Link>
         </div>
 
         {/* Scrollable List Container */}
@@ -57,7 +66,7 @@ export default function Projects() {
                   }}
               >
                 <h3 className="text-xl font-semibold">{project.title}</h3>
-                <p className="mt-2 text-gray-600">{project.description}</p>
+                <p className="mt-2 text-gray-600">{project.shortDescription}</p>
                 <Link href={project.url} className="inline-block mt-4 px-4 py-2 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-500">
                   View Project
                 </Link>
