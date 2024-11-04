@@ -8,8 +8,8 @@ export default function Projects() {
     {
       id: 1,
       title: "Ai Helper",
-      shortDescription: "Description for Ai Helper",
-      longDescription: "",
+      shortDescription: "Personally assistant using openAI API",
+      longDescription: "AI Helper understands your request and responds, it has adds additional features to openAI and responds when you start and stop talking to it. It is able to determine if a person is present and if they are talking to you back.",
       imageUrl: "/test.jpg",
       url: "pop",
     },
@@ -23,11 +23,19 @@ export default function Projects() {
     },
     {
       id: 3,
-      title: "fun project 3",
-      shortDescription: "Description for project 3",
-      longDescription: "",
-      imageUrl: "/test.jpg",
-      url: "rockit",
+      title: "Book of Marks",
+      shortDescription: "Bible note-taking app, that is powered by Firebase, Material-UI, styled-components, and Typescript",
+      longDescription: "Bible note-taking app, that is powered by Firebase, Material-UI, styled-components, and Typescript. It was my first experience working with senior-developers and designers. Through this project, I gained a deeper understanding of full-stack development and the importance of building user-centric applications",
+      imageUrl: "/book_of_marks.png",
+      url: "https://book-of-e994d.web.app/",
+    },
+    {
+      id: 4,
+      title: "Tetris Clone",
+      shortDescription: "A remake of the world famous Tetris",
+      longDescription: "A remake of Tetris built using React and Javascript. It replicates core gameplay of the original game.",
+      imageUrl: "/tetris.png",
+      url: "https://tetris-kappa-blush.vercel.app/",
     }
 
   ];
@@ -44,14 +52,14 @@ export default function Projects() {
         
         {/* Default Project on the Left */}
         <div className="bg-white rounded-lg shadow-lg p-6 md:w-1/2 transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl">
-          <h3 className="text-2xl font-semibold mb-2 justify-self-center">{selectedProject.title}</h3>
+          <h3 className="text-3xl font-semibold mb-4 text-center">{selectedProject.title}</h3>
           <img 
             src={selectedProject.imageUrl}
             alt={`$selectedProject.title`}
             className='w-full h-auto max-h-80 md:max-h-96 object-contain rounded-md'
           />
-          <p className="mt-2">{selectedProject.longDescription}</p>
-          <Link href={selectedProject.url} className="inline-block mt-4 px-4 py-2 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-500">View Project</Link>
+          <p className="text-center text-lg text-gray-700 leading-relaxed mb-4 mt-2">{selectedProject.longDescription}</p>
+          <Link href={selectedProject.url} className="justify-self-center justify-center flex inline-block mt-4 px-4 py-2 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-500">View Project</Link>
         </div>
 
         {/* Scrollable List Container */}
