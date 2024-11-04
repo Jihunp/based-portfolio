@@ -3,6 +3,8 @@
 import "../app/styles/globals.css";
 
 export default function ContactMe() {
+  const userId = process.env.NEXT_PUBLIC_EMAILJS_USER_ID;
+
   return (
     <section id="contact-us" className="flex flex-col items-center justify-center h-screen bg-gray-400 text-gray-800 snap-start pt-20 px-4 sm:px-8 lg:px-16">
       <h2 className="text-4xl md:text-5xl font-bold mb-8">Contact Me</h2>

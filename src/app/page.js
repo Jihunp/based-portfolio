@@ -14,7 +14,7 @@ export default function Home() {
       <AboutMe/>
       <Projects/>
       {/* <ThreeScene/> */}
-      <ContactMe/>
+      {/* <ContactMe/> */}
     </div>
   );
 }
