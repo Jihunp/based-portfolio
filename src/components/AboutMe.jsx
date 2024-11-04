@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import "../app/styles/globals.css";
-import { FaGithub, FaEnvelope, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaEnvelope, FaLinkedin, FaFileAlt, FaFilePdf } from 'react-icons/fa';
 
 export default function AboutMe() {
   return (
@@ -27,13 +27,19 @@ export default function AboutMe() {
       {/* Contact Section */}
       <div className="mt-10 flex space-x-6">
         <a href="mailto:jihunparked@gmail.com" className="text-gray-700 hover:text-indigo-600 transition">
-          <FaEnvelope size={32} />
+          <FaEnvelope size={32} title='Email' />
         </a>
-        <a href="https://github.com/yourgithubusername" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-indigo-600 transition">
-          <FaGithub size={32} />
+        <a href="https://github.com/jihunp" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-indigo-600 transition">
+          <FaGithub size={32} title='Github' />
         </a>
-        <a href="https://www.linkedin.com/in/yourlinkedinusername" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-indigo-600 transition">
-          <FaLinkedin size={32} />
+        <a href="https://www.linkedin.com/in/edward-jihun-park" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-indigo-600 transition">
+          <FaLinkedin size={32} title='LinkedIn' />
+        </a>
+        <a href="/path/to/your-resume.pdf" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-indigo-600 transition">
+          <FaFilePdf size={32} title="Resume" />
+        </a>
+        <a href="/path/to/your-cover-letter.pdf" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-indigo-600 transition">
+          <FaFileAlt size={32} title="Cover Letter" />
         </a>
       </div>
     </section>
