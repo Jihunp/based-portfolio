@@ -36,10 +36,10 @@ export default function AboutMe() {
         <a href="https://www.linkedin.com/in/edward-jihun-park" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-indigo-600 transition">
           <FaLinkedin size={32} title='LinkedIn' />
         </a>
-        <a href="/path/to/your-resume.pdf" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-indigo-600 transition">
+        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-indigo-600 transition">
           <FaFilePdf size={32} title="Resume" />
         </a>
-        <a href="/path/to/your-cover-letter.pdf" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-indigo-600 transition">
+        <a href="/cover_letter.pdf" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-indigo-600 transition">
           <FaFileAlt size={32} title="Cover Letter" />
         </a>
       </div>

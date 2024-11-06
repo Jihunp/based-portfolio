@@ -125,11 +125,11 @@ section {
 @keyframes light-border {
   0% {
     transform: rotate(0deg);
-    border-image-source: linear-gradient(90deg, transparent, #00f, transparent);
+    border-image-source: linear-gradient(90deg, transparent, rgb(37 99 235), transparent);
   }
   100% {
     transform: rotate(360deg);
-    border-image-source: linear-gradient(90deg, transparent, #00f, transparent);
+    border-image-source: linear-gradient(90deg, transparent, rgb(37 99 235), transparent);
   }
 }
 
