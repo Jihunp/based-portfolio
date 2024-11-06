@@ -13,6 +13,7 @@ export default function AboutMe() {
       <div className="absolute bottom-24 left-20 w-28 h-28 bg-green-300 rounded-lg rotate-12 shadow-lg"></div>
       <div className="absolute bottom-10 right-16 w-20 h-20 bg-red-400 rounded-full opacity-60 animate-spin-slow"></div>
 
+
       {/* About Section Content */}
       <h2 className="text-4xl md:text-5xl font-bold mb-4">About</h2>
       <p className="text-lg md:text-2xl max-w-xl text-center mb-6">

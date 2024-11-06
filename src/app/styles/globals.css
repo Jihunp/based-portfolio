@@ -94,3 +94,48 @@ section {
 .animate-gradient {
   animation: gradient 8s ease infinite;
 }
+
+@keyframes border-gradient {
+  0% {
+    border-color: #ff7eb3;
+  }
+  25% {
+    border-color: #ff758f;
+  }
+  50% {
+    border-color: #f26d85;
+  }
+  75% {
+    border-color: #d9668b;
+  }
+  100% {
+    border-color: #ff7eb3;
+  }
+}
+
+.animate-border-gradient {
+  border-radius: 9999px; /* Full circle */
+  border-width: 4px;
+  border-style: solid;
+  background-clip: border-box;
+  animation: border-gradient 3s linear infinite;
+}
+
+
+@keyframes light-border {
+  0% {
+    transform: rotate(0deg);
+    border-image-source: linear-gradient(90deg, transparent, #00f, transparent);
+  }
+  100% {
+    transform: rotate(360deg);
+    border-image-source: linear-gradient(90deg, transparent, #00f, transparent);
+  }
+}
+
+.animate-light-border {
+  border-style: solid;
+  border-width: 4px;
+  border-image-slice: 1;
+  animation: light-border 3s linear infinite;
+}

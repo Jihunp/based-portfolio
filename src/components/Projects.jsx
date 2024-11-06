@@ -10,8 +10,8 @@ export default function Projects() {
       title: "Ai Helper",
       shortDescription: "Personally assistant using openAI API",
       longDescription: "AI Helper understands your request and responds, it has adds additional features to openAI and responds when you start and stop talking to it. It is able to determine if a person is present and if they are talking to you back.",
-      imageUrl: "/test.jpg",
-      url: "pop",
+      imageUrl: "/in_progress.png",
+      url: "p",
     },
     {
       id: 2,
@@ -56,7 +56,7 @@ export default function Projects() {
           <img 
             src={selectedProject.imageUrl}
             alt={`$selectedProject.title`}
-            className='w-full h-auto max-h-80 md:max-h-96 object-contain rounded-md'
+            className='w-full h-[200px] md:h-[300px] lg:h-[400px] max-h-70 md:max-h-96 object-contain rounded-md'
           />
           <p className="text-center text-lg text-gray-700 leading-relaxed mb-4 mt-2">{selectedProject.longDescription}</p>
           <Link href={selectedProject.url} className="justify-self-center justify-center flex inline-block mt-4 px-4 py-2 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-500">View Project</Link>
@@ -75,7 +75,7 @@ export default function Projects() {
               >
                 <h3 className="text-xl font-semibold">{project.title}</h3>
                 <p className="mt-2 text-gray-600">{project.shortDescription}</p>
-                <Link href={project.url} className="inline-block mt-4 px-4 py-2 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-500">
+                <Link href={project.url} target="_blank" rel="noopener noreferrer" className="inline-block mt-4 px-4 py-2 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-500">
                   View Project
                 </Link>
               </li>

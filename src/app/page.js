@@ -9,6 +9,7 @@ import ContactMe from "@/components/ContactMe";
 export default function Home() {
   return (
     <div>
+
       <Navbar/>
       <Intro/>
       <AboutMe/>

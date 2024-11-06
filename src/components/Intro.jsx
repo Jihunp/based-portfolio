@@ -8,8 +8,12 @@ export default function Intro() {
     <section className="relative flex flex-col items-center justify-center text-center bg-gray-100 text-gray-800 snap-start">
 
       {/* Profile Image */}
-      <div className="duration-150 w-32 h-32 rounded-full bg-cover bg-center bg-no-repeat mb-6" style={{ backgroundImage: "url('/test.jpg')" }}>
+      <div className="overflow-hidden group relative w-96 h-96 rounded-full bg-cover bg-center bg-no-repeat mb-6 shadow-lg ring-4 ring-blue-500 hover:ring-blue-700 transform hover:scale-110 transition-transform duration-300 ease-in-out" style={{ backgroundImage: "url('/headshot.jpg')" }}>
+        <div className="absolute inset-0 rounded-full border-4 border-transparent animate-light-border group-hover:opacity-0 transition-opacity duration-300"></div>
       </div>
+
+
+
 
       {/* Intro Text */}
       <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-4">
