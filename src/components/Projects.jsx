@@ -7,11 +7,11 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: "Ai Helper",
-      shortDescription: "Personally assistant using openAI API",
+      title: "JARVUS AI Assistant",
+      shortDescription: "Personal assistant using openAI API",
       longDescription: "AI Helper understands your request and responds, it has adds additional features to openAI and responds when you start and stop talking to it. It is able to determine if a person is present and if they are talking to you back.",
-      imageUrl: "/in_progress.png",
-      url: "p",
+      imageUrl: "/jarvus.jpg",
+      url: "https://youtu.be/eOE7KYCtJSQ",
     },
     {
       id: 2,

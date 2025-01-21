@@ -16,7 +16,7 @@ const Footer = () => {
           <a href="https://www.linkedin.com/in/edward-jihun-park" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-indigo-600 transition">
             <FaLinkedin size={32} title="LinkedIn" />
           </a>
-          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-indigo-600 transition">
+          <a href="/Edward_resume.pdf" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-indigo-600 transition">
             <FaFilePdf size={32} title="Resume" />
           </a>
           <a href="/cover_letter.pdf" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-indigo-600 transition">
